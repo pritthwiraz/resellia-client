@@ -44,22 +44,34 @@ const Blogs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-base-200 py-5">
-
+                <div className="bg-base-500 py-5">
                     <h2 className="text-3xl font-bold text-center">How does prototypical inheritance work?</h2>
                     <p className="px-10 text-2xl pt-5 text-justify">Simply put, prototypical inheritance refers to the ability to access object properties from another object. We use a JavaScript prototype to add new properties and methods to an existing object constructor. We can then essentially tell our JS code to inherit properties from a prototype. Prototypical inheritance allows us to reuse the properties or methods from one JavaScript object to another through a reference pointer function.</p>
                 </div>
                 <div className="min-h-screen bg-base-200 py-5">
                     <h2 className="text-3xl font-bold text-center">What is a unit test? Why should we write unit tests?</h2>
                     <p className="px-10 text-2xl pt-5 text-justify mb-5"><strong>unit test</strong>-Unit testing is a software development process in which the smallest testable parts of an application, called units, are individually and independently scrutinized for proper operation. This testing methodology is done during the development process by the software developers and sometimes QA staff.  The main objective of unit testing is to isolate written code to test and determine if it works as intended. Unit testing is an important step in the development process, because if done correctly, it can help detect early flaws in code which may be more difficult to find in later testing stages.</p>
-                    <p className="px-10 text-2xl pt-5 text-justify mb-5"><strong>Why should we write unit tests?</strong>-As developers, it is not possible to check every single line of code, but it is a developer's job.
+                    <p className="px-10 text-2xl pt-5 text-justify"><strong>Why should we write unit tests?</strong>-As developers, it is not possible to check every single line of code, but it is a developer's job.
                         Writing unit tests gives the developers a piece of mind when moving on to the next task/feature on-hand. It would be better to write a unit test to confirm the behavior of code than to not write a unit test and have a customer discover an error in the system.</p>
                 </div>
-                <div className="min-h-screen bg-base-200 py-5">
+                <div className="min-h-screen bg-base-500">
                     <h2 className="text-3xl font-bold text-center">React vs. Angular vs. Vue?</h2>
-                    <p className="px-10 text-2xl pt-5 text-justify mb-5"><strong>React</strong>Unit testing is a software development process in which the smallest testable parts of an application, called units, are individually and independently scrutinized for proper operation. This testing methodology is done during the development process by the software developers and sometimes QA staff.  The main objective of unit testing is to isolate written code to test and determine if it works as intended. Unit testing is an important step in the development process, because if done correctly, it can help detect early flaws in code which may be more difficult to find in later testing stages.</p>
-                    <p className="px-10 text-2xl pt-5 text-justify mb-5"><strong>Why should we write unit tests?</strong>-As developers, it is not possible to check every single line of code, but it is a developer's job.
-                        Writing unit tests gives the developers a piece of mind when moving on to the next task/feature on-hand. It would be better to write a unit test to confirm the behavior of code than to not write a unit test and have a customer discover an error in the system.</p>
+                    <p className="px-10 text-2xl pt-5 text-justify mb-5"><strong>React</strong>-developed by Facebook, was initially released in 2013. Facebook uses React extensively in their products (Facebook, Instagram, and WhatsApp).</p>
+                    <p className="px-10 text-2xl text-justify mb-5"><strong>Angular</strong>-developed by Google, was first released in 2010, making it the oldest of the lot. It is a TypeScript-based JavaScript framework.</p>
+                    <p className="px-10 text-2xl text-justify mb-5"><strong>Vue</strong>-also known as Vue.js, is the youngest member of the group. It was developed by ex-Google employee Evan You in 2014. Over the last several years, Vue has seen a substantial shift in popularity, even though it doesn’t have the backing of a large company.</p>
+                    <h2 className="text-2xl font-semibold text-center">Key Differences Between Angular.Js, React.Js And Vue.Js</h2>
+                    <h3 className='text-xl font-bold px-10'>Architecture</h3> 
+                    <p className="px-10 text-2xl pt-2 text-justify mb-5">Speaking of architecture, Angular.js is a full-fledged MVC framework that provides you with all the possibilities for out-of-the-box programming:</p>
+                    <p className="px-10 text-2xl text-justify mb-5">React.js, on the other hand, is a library that just offers the view, leaving the developer to decide how to construct the Model and Controller.</p>
+                    <p className="px-10 text-2xl text-justify mb-5">Vue.js is a library that allows you to create interactive web interfaces. Vue.js is primarily concerned with the ViewModel layer of the MVVM architecture.</p>
+                    <h3 className='text-xl font-bold px-10'>Data Binding</h3> 
+                    <p className="px-10 text-2xl pt-2 text-justify mb-5">Angular.js uses the two-way binding. The state of the model is changed first, and then the modification of the interface element is reflected. The interface element changes as the model’s state changes, which is why two-way data binding is used.</p>
+                    <p className="px-10 text-2xl text-justify mb-5">React.js has one-way binding. First, the state of the model is updated, and then it reflects the change of the interface element. If you change the interface element, the state of the model stays the same.</p>
+                    <p className="px-10 text-2xl text-justify mb-5">The data binding on Vue.js is two-way. Vue.js synchronizes the entire model with the DOM mechanically. This implies that all Vue.js templates are fundamentally legal, parsable HTML with a few extra features. Remember this because Vue templates are fundamentally different from string-based templates.</p>
+                    <h3 className='text-xl font-bold px-10'>Syntax</h3> 
+                    <p className="px-10 text-2xl pt-2 text-justify mb-5">Angular is written in TypeScript, which means you need some time to learn it to work with this framework.</p>
+                    <p className="px-10 text-2xl text-justify mb-5">React uses JSX and native Javascript developers are familiar with it. The training period is easier and does not require that much preparation.</p>
+                    <p className="px-10 text-2xl text-justify mb-5">Vue.js makes use of an HTML-based template syntax that allows you to link the displayed DOM to the data of the base element instance declaratively.</p>
                 </div>
             </div>
         </div>
