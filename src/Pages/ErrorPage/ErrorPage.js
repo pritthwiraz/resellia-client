@@ -4,7 +4,7 @@ import error from '../../Resources/Images/images/Error.jpg'
 
 const ErrorPage = () => {
     return (
-        <div className="bg-no-repeat bg-center min-h-screen" style={{ backgroundImage: `url(${error})` }}>
+        <div className="bg-no-repeat bg-center lg:min-h-screen" style={{ backgroundImage: `url(${error})` }}>
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-lg mt-32 pl-20">
