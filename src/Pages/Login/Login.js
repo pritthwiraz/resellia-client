@@ -35,9 +35,9 @@ const Login = () => {
                                 {errors.password && <p className='text-red-700'>{errors.password?.message}</p>}    
                             </div>
                 
-                            <input className='btn w-full mt-6' type="submit" />
+                            <input className='btn w-full mt-6' value="Login" type="submit" />
                         </form>
-                        <p>First Time at Resellia<Link className='text-primary' to="/signup">Create an Account</Link></p>
+                        <p>First Time at Resellia<Link className='text-primary' to="/signup"> Create an Account</Link></p>
                         <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
                     </div>
                 </div>
