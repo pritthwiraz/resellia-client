@@ -1,0 +1,33 @@
+[
+    {
+        "category_id": "01",
+        "brand": "DELL",
+        "img":"https://i.ibb.co/M6YR2XV/Dell-Laptops.jpg", 
+        "description": "Do you want to buy laptop from one of the best used laptop importer in the country? Then we’re here to give you just that.visit Resellia today."
+        
+    },
+    {
+        "category_id": "02",
+        "brand": "LENOVO",
+        "img":"https://i.ibb.co/Y8fzKY4/Lenovo-Laptops.jpg", 
+        "description": "Resellia is the best option when it comes to getting your next laptop, not only from Lenovo, but also from any other brands as well. We’re offering you the best Lenovo laptop price in Bangladesh."
+        
+    },
+    
+    {
+        "category_id": "03",
+        "brand": "HP(Hewlet Packard)",
+        "img":"https://i.ibb.co/k0YyHwg/HP-Laptop.jpg", 
+        "description": "If you need the best quality HP Laptop from a trusted seller, we’re your best option with the best used core i7 laptop price in Bangladesh as well as for i5, i3, and 2 in 1 models."
+        
+    },
+    {
+        "category_id": "04",
+        "brand": "TOSHIBA",
+        "img":"https://i.ibb.co/K9tkzTC/Toshiba-Laptops.png", 
+        "description": "Resellia import only the laptops that are in mint condition without any hardware or software issues.That way, you’re getting layers of professional care and best Toshiba Core i5, i7 Laptops."
+        
+    }
+    
+]
+    
