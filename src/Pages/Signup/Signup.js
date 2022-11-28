@@ -6,7 +6,7 @@ import signupimg from '../../Resources/Images/images/signup.png'
 
 const Signup = () => {
     const {register, formState: { errors }, handleSubmit} = useForm()
-    const {createUser} = useContext(AuthContext);
+    const {createUser, signInWithGoogle} = useContext(AuthContext);
 
     const handleSignUp = (data) =>{
         console.log(data);
@@ -16,6 +16,15 @@ const Signup = () => {
             console.log(user)
         })
         .catch(error => console.log(error));
+    }
+
+    const handleGoogleSignIn = () =>{
+        signInWithGoogle()
+        .then(result => {
+            const user = result.user;
+            console.log(user);
+        })
+        .catch(error => console.error(error))
     }
 
     return (
@@ -52,7 +61,7 @@ const Signup = () => {
                         <input className='btn w-full mt-6' value="Signup" type="submit" />
                     </form>
                     <p>Already a member<Link className='text-primary' to="/login"> Please Login</Link></p>
-                    <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
+                    <button onClick={handleGoogleSignIn} className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
                 </div>
             </div>
         </div>
