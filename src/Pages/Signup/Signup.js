@@ -1,22 +1,54 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
+import useToken from '../../Hook/useToken';
 import signupimg from '../../Resources/Images/images/signup.png'
 
 const Signup = () => {
     const {register, formState: { errors }, handleSubmit} = useForm()
-    const {createUser, signInWithGoogle} = useContext(AuthContext);
+    const {createUser, updateUser, signInWithGoogle} = useContext(AuthContext);
+    const [createdUserEmail, setCreatedUserEmail] = useState('');
+    const [token] = useToken(createdUserEmail);
+    const navigate = useNavigate();
+
+    if(token){
+        navigate('/')
+    }
 
     const handleSignUp = (data) =>{
         console.log(data);
         createUser(data.email, data.password)
         .then(result =>{
             const user = result.user;
-            console.log(user)
+            console.log(user);
+            const userInfo = {
+                displayName: data.name
+            }
+            updateUser(userInfo)
+            .then( () => {})
+            saveUser(data.name, data.email);
         })
         .catch(error => console.log(error));
     }
+
+    const saveUser = (name, email) => {
+        const user ={name, email};
+        fetch('http://localhost:5000/users', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+        .then(res => res.json())
+        .then(data => {
+            setCreatedUserEmail(email);
+            
+        })
+    }
+
+
 
     const handleGoogleSignIn = () =>{
         signInWithGoogle()
