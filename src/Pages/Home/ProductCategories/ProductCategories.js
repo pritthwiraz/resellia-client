@@ -6,7 +6,7 @@ const ProductCategories = () => {
     const [productCategories, setProductCategories] = useState([])
 
     useEffect( () =>{
-        fetch('http://localhost:5000/laptopBrands')
+        fetch('https://resellia-server.vercel.app/laptopBrands')
         .then(res => res.json())
         .then(data => setProductCategories(data))
     }, [])
